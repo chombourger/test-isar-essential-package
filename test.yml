@@ -1,0 +1,18 @@
+header:
+  version: 14
+
+build_system: isar
+
+distro: debian-bookworm
+target: isar-image-base
+machine: qemuamd64
+
+repos:
+  meta-test:
+
+  isar:
+    url: https://github.com/ilbers/isar
+    commit: 6b6c74411074e3d3a08f044e681c3f1216727b6e
+    layers:
+      meta:
+      meta-isar:
